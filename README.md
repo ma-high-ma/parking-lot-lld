@@ -1,4 +1,4 @@
-# parking-lot-lld
+# Parking Lot
 
 LLD of Parking Lot Problem.
 
