@@ -1,14 +1,14 @@
-from constants import VehicleType
-from services.slot.bike import BikeSlotService
-from services.slot.car import CarSlotService
-from services.slot.truck import TruckSlotService
+from constants import VehicleType, SlotType
+from services.slot.bike import SmallSlotService
+from services.slot.car import LargeSlotService
+from services.slot.truck import MediumSlotService
 
 
 class SlotResolver:
     type_to_slot_mapping = {
-        VehicleType.CAR: CarSlotService,
-        VehicleType.TRUCK: TruckSlotService,
-        VehicleType.BIKE: BikeSlotService,
+        SlotType.LARGE: LargeSlotService,
+        SlotType.MEDIUM: MediumSlotService,
+        SlotType.SMALL: SmallSlotService,
     }
     @classmethod
     def get_obj(cls, slot_type):

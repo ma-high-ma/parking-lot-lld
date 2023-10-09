@@ -8,4 +8,4 @@ class TicketService:
         return ticket
 
     def generate_id(self, parking_lot_id, slot):
-        return f"{parking_lot_id}_{slot.floor}_{slot.id}"
+        return f"{parking_lot_id}_{slot.id}"

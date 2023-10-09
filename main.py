@@ -3,6 +3,20 @@ from services.parking_manager import ParkingManager
 if __name__ == '__main__':
     pm = ParkingManager()
 
+    """
+    COMMANDS :
+        create_parking_lot PR1234 2 6
+        display free_slots CAR
+        display free_count CAR
+    
+    """
+    """
+    TODO: 
+    1. Update ticket creation based on new floor obj and slot saving method
+    2. Add price based on slot type
+    3. Parking fare should be calculated when unparking vehicle
+    """
+
     while True:
         input_str = input()
         words = input_str.split()

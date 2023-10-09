@@ -1,7 +1,6 @@
 class Slot:
-    def __init__(self, id, floor, type, is_occupied):
+    def __init__(self, id, type, is_occupied):
         self.id = id
-        self.floor = floor
         self.type = type
         self.is_occupied = is_occupied
 
@@ -10,12 +9,6 @@ class Slot:
 
     def set_id(self, id):
         self.id = id
-
-    def set_floor(self, floor):
-        self.floor = floor
-
-    def get_floor(self):
-        return self.floor
 
     def set_type(self, type):
         self.type = type

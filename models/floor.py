@@ -1,13 +1,13 @@
 class Floor:
-    def __init__(self, id, slots):
+    def __init__(self, id, slot_map):
         self.id = id
-        self.slots = slots
+        self.slot_map = slot_map
 
-    def set_slots(self, slots):
-        self.slots = slots
+    def set_slot_map(self, slot_map):
+        self.slot_map = slot_map
 
-    def get_slots(self):
-        return self.slots
+    def get_slot_map(self):
+        return self.slot_map
 
     def set_id(self, id):
         self.id = id

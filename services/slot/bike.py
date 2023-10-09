@@ -1,8 +1,8 @@
-from constants import VehicleType
+from constants import VehicleType, SlotType
 from models.slot import Slot
 from services.slot.base import SlotBaseService
 
 
-class BikeSlotService(SlotBaseService):
+class SmallSlotService(SlotBaseService):
     def create_obj(self):
-        return Slot(id=self.id, floor=self.floor, type=VehicleType.BIKE, is_occupied=False)
+        return Slot(id=self.id, type=SlotType.SMALL, is_occupied=False)
